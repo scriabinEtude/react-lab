@@ -8,6 +8,7 @@ import store from './common/store'
 import Pagemover from './main/component/Pagemover'
 import Observer from './observer/Observer'
 import Link from './link/Link.js'
+import Instagram from './instagram/Instagram'
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
 
       <Route exact path="/observer" component={Observer} />
       <Route exact path="/link" component={Link} />
+      <Route exact path="/instagram" component={Instagram} />
+
     </Provider>
   )
 }
@@ -25,4 +28,5 @@ export default function App() {
 const pages = [
   { name: 'observer', path: '/observer' },
   { name: 'link', path: '/link' },
+  { name: 'instagram', path: '/instagram' },
 ]
