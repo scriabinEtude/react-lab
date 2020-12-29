@@ -20,10 +20,15 @@ function Link() {
     }
 
     function linkValidation(url) {
-        const IsWebAlive = new XMLHttpRequest()
-        IsWebAlive.addEventListener('load', () => console.log(this.reponseText))
-        IsWebAlive.open("GET", url)
-        IsWebAlive.send()
+        // const headers = new Headers({
+        //     'Content-Type': 'text/xml',
+        // })
+        // fetch(url, { headers })
+
+        // const IsWebAlive = new XMLHttpRequest()
+        // IsWebAlive.addEventListener('load', () => console.log(this.reponseText))
+        // IsWebAlive.open("GET", url)
+        // IsWebAlive.send()
     }
 
     return (
