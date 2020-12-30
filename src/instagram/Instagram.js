@@ -35,7 +35,6 @@ function Instagram() {
                         <Button type="primary" htmlType="submit" style={{ width: "100%" }}>
                             Log in
                         </Button>
-                        Or <a href="">register now!</a>
                     </Form.Item>
                 </Form>
             </Col>
