@@ -5,7 +5,7 @@ import linkReducer from '../link/state'
 import authReducer from '../auth/state'
 
 import authSaga from '../auth/state/saga'
-import { composeWithDevTools } from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -18,7 +18,6 @@ const store = createStore(
     reducer,
     composeWithDevTools(
         applyMiddleware(sagaMiddleware),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     )
 )
 
