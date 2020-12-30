@@ -1,7 +1,7 @@
 import { Col, Row, Form } from 'antd';
 import React from 'react';
 
-export default function AuthLayout({children, onFinish}) {
+export default function AuthLayout({children}) {
   return (
     <>
         <Row justify="center" style={{marginTop:100}}>
@@ -11,12 +11,7 @@ export default function AuthLayout({children, onFinish}) {
         </Row>
         <Row justify="center">
             <Col>
-                <Form
-                    style={{width:300, marginTop:50}}
-                    onFinish={onFinish}
-                >
-                    {children}
-                </Form>
+                {children}
             </Col>
         </Row>
     </>

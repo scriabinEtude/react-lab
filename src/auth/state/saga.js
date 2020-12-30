@@ -24,7 +24,7 @@ function* fetchLogin({name, password}){
 export default function* (){
     yield all([
         takeLeading(
-            Types.fetchLogin,
+            Types.FetchLogin,
             fetchLogin
         )
     ])
