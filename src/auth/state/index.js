@@ -20,7 +20,7 @@ export const actions = {
 
 const INITIAL_STATE = {
     name : '',
-    status: undefined
+    status: AuthStatus.NotLogin
 }
 
 const authReducer = createReducer(INITIAL_STATE, {
